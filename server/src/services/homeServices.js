@@ -12,7 +12,12 @@ const helloWorldService = () => {
 const createUserService = (body) => {
     return new Promise(async (resolve, reject) => {
         try {
-            const user = await db.Users.create({ username: body.username, password: body.password });
+            console.log('check body : ', body);
+            const user = await db.User.create({
+                firstName: body.firstName,
+                lastName: body.lastName,
+                email: body.email,
+            });
             resolve({ errCode: 0, msg: 'Create user success!' });
         } catch (e) {
             reject(e);

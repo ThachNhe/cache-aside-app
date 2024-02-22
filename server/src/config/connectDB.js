@@ -1,11 +1,8 @@
 const { Sequelize } = require('sequelize');
-const sequelize = new Sequelize('cache_aside', 'root', null, {
+const sequelize = new Sequelize('democache', 'username', 'password', {
     host: 'localhost',
-    port: process.env.PORT,
     dialect: 'mysql',
-    logging: false,
 });
-
 const connectDB = async () => {
     try {
         await sequelize.authenticate();
