@@ -1,9 +1,9 @@
 {
     "development": {
         "username": "root",
-        "password": null,
+        "password": "password",
         "database": "democache",
-        "host": "127.0.0.1",
+        "host": "db",
         "dialect": "mysql",
         "query": {
             "raw": true
@@ -12,16 +12,16 @@
     },
     "test": {
         "username": "root",
-        "password": null,
+        "password": "password",
         "database": "database_test",
-        "host": "127.0.0.1",
+        "host": "db",
         "dialect": "mysql"
     },
     "production": {
         "username": "root",
-        "password": null,
+        "password": "password",
         "database": "database_production",
-        "host": "127.0.0.1",
+        "host": "db",
         "dialect": "mysql"
     }
 }
